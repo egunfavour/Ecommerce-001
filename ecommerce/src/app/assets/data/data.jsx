@@ -31,24 +31,24 @@ export const StoreItems = [
     id: 1,
     Image: apollo,
     name: "Apollo Running Short",
-    price: "USD",
+    price: "50.00",
   },
   {
     id: 2,
     image: short,
     name: "Apollo Running Short",
-    currency: "USD",
+    price: "50.00",
   },
   {
     id: 3,
     image: running,
     name: "Apollo Running Short",
-    currency: "USD",
+    price: "50.00",
   },
   {
     id: 4,
     image: shirt,
     name: "Apollo Running Short",
-    currency: "USD",
+    price: "50.00",
   }
 ];
