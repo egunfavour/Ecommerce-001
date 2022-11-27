@@ -5,6 +5,7 @@ import styled from 'styled-components';
  flex-direction: row;
  justify-content: space-between;
  width: auto;
+ height: 3rem;
  padding: .5rem 2rem;
  `;
 
@@ -20,8 +21,22 @@ export const NavList = styled.ul`
  width: auto;
 `;
 
+export const ItemSpan = styled.span`
+ padding-top: 1rem;
+`;
+
+export const CurrencySpan = styled.span`
+ margin-bottom: 1rem;
+`;
+
 export const ListItem = styled.li`
  margin: 0 1rem;
+
+ &:hover {
+    border-bottom: 2px solid #07a907;
+    height: 2.5rem;
+    width: 5rem;
+  }
 `;
 
 export const NavMid = styled.div`
@@ -46,14 +61,15 @@ export const NavRight = styled.div`
  flex-direction: row;
  justify-content: flex-end;
  width: 30%;
+ margin-top: 1rem;
+ padding-right: 5rem;
 `;
 
 export const NavDropdownDiv = styled.div`
- background-color: gold;
-  margin: 1rem;
-  width: 10%;
-  height: 20px;
-  font-size: 15px;
+ background-color: transparent;
+  width: 3rem;
+  height: auto;
+  font-size: 18px;
   color: #000;
   font-weight: 400;
   border-radius: 5px;
@@ -65,12 +81,11 @@ export const NavDropdownDiv = styled.div`
 export const NavDropdownHeader = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.2rem;
   background: transparent;
-  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 `;
 
@@ -79,32 +94,32 @@ export const NavDropDownSpan = styled.div`
 `;
 
 export const NavDropdownItem = styled.div`
- padding: 10px;
+    padding: 10px;
    cursor: pointer;
-   transition: all 0.2s;
+   align-items: center;
 
 
   &:hover {
-    background: white;
-    width: 100%;
-    border-radius: 5px;
+    background: #EEEEEE;
+    width: auto;
   }
 `;
 
 export const NavDropdown = styled.div`
- background-color: gold;
-  width: 95%;
-  font-size: 20px;
+ background-color: transparent;
+  width: 6rem;
+  font-size: 16px;
   color: #333;
-  font-weight: 500;
-  position: abssolute;
+  font-weight: 400;
+  position: absolute;
   top: 110%;
   left: 0;
-  padding: 10px;
+  padding: 7px;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  border-radius: 5px;
 `;
 
 export const CartSpan = styled.div`
- margin-left: 1rem;
+ margin-top: .3rem;
+ margin-left: .3rem;
+ font-size: 20px;
 `;
