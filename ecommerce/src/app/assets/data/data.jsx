@@ -1,10 +1,10 @@
 import { BsCurrencyDollar } from "react-icons/bs";
 import { TbCurrencyEuro } from "react-icons/tb";
 import { BsCurrencyYen } from "react-icons/bs";
-import apollo from '../img/image.jpg'
-import short from '../img/image1.jpg'
-import running from '../img/image2.jpg'
-import shirt from '../img/image2,jpg'
+import apollo from '../img/Image.jpg'
+import short from '../img/Image1.jpg'
+import running from '../img/Image2.jpg'
+import shirt from '../img/Image3.jpg'
 
 export const dropdownItems = [
   {
@@ -26,10 +26,10 @@ export const dropdownItems = [
 
 
 
-export const StoreItems = [
+export const storeItems = [
   {
     id: 1,
-    Image: apollo,
+    image: apollo,
     name: "Apollo Running Short",
     price: "50.00",
   },
