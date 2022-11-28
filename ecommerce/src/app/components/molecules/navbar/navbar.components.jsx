@@ -4,9 +4,10 @@ import { HiOutlineArrowUturnUp } from "react-icons/hi2";
 import { RiArrowDropUpLine } from "react-icons/ri";
 import { BsCurrencyDollar } from "react-icons/bs";
 
-
 import {
   CartSpan,
+  CurrencySpan,
+  ItemSpan,
   ListItem,
   MidDiv,
   Nav,
@@ -23,8 +24,8 @@ import {
 import { dropdownItems } from "../../../assets/data/data";
 
 const Navbar = () => {
-    const initial = <BsCurrencyDollar />;
-    
+  const initial = <BsCurrencyDollar />;
+
   const [isActive, setIsActive] = useState(false);
   const [selected, setSelected] = useState(initial);
 
@@ -55,6 +56,7 @@ const Navbar = () => {
                 <RiArrowDropUpLine />
               </NavDropDownSpan>
             </NavDropdownHeader>
+            {isActive && 
             <NavDropdown>
               {dropdownItems.map((item, i) => {
                 const { id, icon, currency } = item;
@@ -69,12 +71,12 @@ const Navbar = () => {
                       setIsActive(false);
                     }}
                   >
-                    <span>{icon}</span>
-                    {currency}
+                    <ItemSpan>{icon}</ItemSpan>
+                    <CurrencySpan>{currency}</CurrencySpan>
                   </NavDropdownItem>
                 );
               })}
-            </NavDropdown>
+            </NavDropdown> }
           </NavDropdownDiv>
           <CartSpan>
             <AiOutlineShoppingCart />

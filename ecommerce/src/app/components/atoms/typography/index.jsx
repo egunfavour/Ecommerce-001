@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { pxToRem } from "utils/helpers/px-to-rem/pxToRem";
+import { pxToRem } from '../../../../utils/helpers/px-to-rem/pxToRem';
 import PropTypes from "prop-types";
 
 const TextStyling = styled.p`
