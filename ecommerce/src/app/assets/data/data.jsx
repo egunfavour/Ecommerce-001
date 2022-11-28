@@ -50,5 +50,17 @@ export const storeItems = [
     image: shirt,
     name: "Apollo Running Short",
     price: "50.00",
+  },
+  {
+    id: 5,
+    image: apollo,
+    name: "Apollo Running Short",
+    price: "50.00",
+  },
+  {
+    id: 6,
+    image: running,
+    name: "Apollo Running Short",
+    price: "50.00",
   }
 ];
