@@ -1,7 +1,7 @@
 
 import React from "react";
 import Navbar from "../../components/molecules/navbar/navbar.components";
-import Main from "../../components/molecules/main/main";
+import Main from "../../components/molecules/main/main.component.jsx";
 import CategoryHeading from "../../components/molecules/category-head/category-head.component";
 
 const Home = () => {

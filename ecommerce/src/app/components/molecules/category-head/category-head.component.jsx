@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 const CategoryHeadingDiv = styled.div`
     width: 30%;
+    height: 2.5rem;
+    margin: 3.5rem 0 0 .5rem;
 `;
 
 const CategoryHeader = styled(Heading)`
