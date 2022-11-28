@@ -1,6 +1,7 @@
 
 import React from "react";
 import { storeItems } from "../../../assets/data/data";
+import Image from '../../atoms/image/image.components'
 
 const Main = () => {
     const currency = "$"
@@ -18,7 +19,7 @@ const Main = () => {
             //   setLogo(true);
           }}
         >
-          <div className="image"> {image}</div>
+          <div className="image"><Image url={image}/></div>
           <div className="name">{name}</div>
           <div className="price">{currency}{price}</div>
         </div>)
