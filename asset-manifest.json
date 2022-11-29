@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Ecommerce-001/static/css/main.5250fa6c.css",
+    "main.js": "/Ecommerce-001/static/js/main.38316035.js",
+    "static/js/787.dcc73137.chunk.js": "/Ecommerce-001/static/js/787.dcc73137.chunk.js",
+    "static/media/Image.jpg": "/Ecommerce-001/static/media/Image.5f87bd383136bc518d81.jpg",
+    "static/media/Image1.jpg": "/Ecommerce-001/static/media/Image1.bb93067747e71175eaf9.jpg",
+    "static/media/Image3.jpg": "/Ecommerce-001/static/media/Image3.be033e41ccdb2ac44b4b.jpg",
+    "static/media/Image2.jpg": "/Ecommerce-001/static/media/Image2.b8d4bdd9af9177803bd9.jpg",
+    "index.html": "/Ecommerce-001/index.html",
+    "main.5250fa6c.css.map": "/Ecommerce-001/static/css/main.5250fa6c.css.map",
+    "main.38316035.js.map": "/Ecommerce-001/static/js/main.38316035.js.map",
+    "787.dcc73137.chunk.js.map": "/Ecommerce-001/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5250fa6c.css",
+    "static/js/main.38316035.js"
+  ]
+}
