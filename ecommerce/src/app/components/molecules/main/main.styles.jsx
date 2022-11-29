@@ -19,7 +19,7 @@ export const CardFeatureDiv = styled.div`
 `;
 
 export const CardDiv = styled.div`
-  display: flex;
+display: flex;
 flex-direction: column;
 justify-content: flex-end;
 padding: 10px;

@@ -1,8 +1,7 @@
-
 import React from "react";
 import Navbar from "../../components/molecules/navbar/navbar.components";
 import Main from "../../components/molecules/main/main.component.jsx";
-import CategoryHeading from "../../components/molecules/category-head/category-head.component";
+import { CategoryHead } from "./home.styles";
 
 const Home = () => {
   // const [isActive, setIsActive] = useState(false);
@@ -11,12 +10,16 @@ const Home = () => {
   //   setIsActive = !isActive;
   // };
 
-
   return (
     <div>
       <Navbar />
-      <CategoryHeading />
-            <Main />
+      <CategoryHead
+        fontSize="42px"
+        textColor="#000"
+        fontWeight="400"
+        name="Category name"
+      />
+      <Main />
     </div>
   );
 };
