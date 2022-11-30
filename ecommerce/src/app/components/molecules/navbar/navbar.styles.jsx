@@ -36,6 +36,7 @@ export const ListItem = styled.li`
     border-bottom: 2px solid #07a907;
     height: 2.5rem;
     width: 5rem;
+    text-align: center;
   }
 `;
 
@@ -54,6 +55,10 @@ export const MidDiv = styled.div`
   padding: .5rem .7rem;
   border-radius: 5px 5px 0 0;
   position: absolute; */
+  /* border-bottom: 30px solid #07a907;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  padding: 0.5rem 0.2rem 0 0.2rem; */
 `;
 
 export const NavRight = styled.div`

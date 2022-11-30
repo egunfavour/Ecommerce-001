@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const BaseButton = styled.button`
-  min-width: 50px;
+  min-width: 30px;
   width: ${({ width }) => width || "auto"};
   height: ${({ height }) => height || "3rem"};
   color: #fff;
-  background-image: linear-gradient(
-    to right,
-    rgb(67, 97, 238),
-    rgb(58, 12, 163)
-  );
+  background-color: ${({ backgroundColor }) => backgroundColor || "green"};
   border: 1px solid #fff;
   cursor: pointer;
   display: flex;
@@ -20,12 +16,8 @@ export const BaseButton = styled.button`
   gap: 16px;
 
   &:hover {
-    border: none;
-    background-image: linear-gradient(
-      to right,
-      rgb(67, 97, 244),
-      rgb(58, 12, 123)
-    );
+    border: ${({ border }) => border || "none"};
+    background-color: ${({ backgroundColor }) => backgroundColor || "blue"};
   }
 `;
 
