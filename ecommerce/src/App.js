@@ -1,12 +1,14 @@
 import './App.css';
-import Details from './app/pages/details-page/details-page.component.jsx/details-page.components';
+import Cart from './app/pages/cart/cart.component';
+import Form from './app/pages/form/form.component';
 // import Home from './app/pages/home/home.component';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       {/* <Home /> */}
-      <Details />
+       <Cart /> 
+      {/* <Form /> */}
     </div>
   );
 }
