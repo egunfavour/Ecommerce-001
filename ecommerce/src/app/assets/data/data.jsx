@@ -64,3 +64,36 @@ export const storeItems = [
     price: "50.00",
   }
 ];
+
+
+
+export const cartItems = [
+  {
+    id: 1,
+    image: apollo,
+    brand: "Apollo",
+    name: "Running Short",
+    price: "50.00",
+    size1: "XS",
+    size2: "S",
+    size3: "M",
+    size4: "L",
+    color1: "#D3D2D5",
+    color2: "#2B2B2B",
+    color3: "#0F6450",
+    qty: 1,
+  },
+  {
+    id: 2,
+    image: apollo,
+    brand: "Jupiter",
+    name: "Wayfarer",
+    price: "75.00",
+    size1: "S",
+    size2: "M",
+    color1: "#1D1F22",
+    color2: "#15A4C3",
+    color3: "#EA8120",
+    qty: 2,
+  }
+];

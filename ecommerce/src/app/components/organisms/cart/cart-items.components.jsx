@@ -1,81 +1,163 @@
 import React from "react";
-import bull from "../../../assets/img/Image.jpg";
+import { cartItems } from "../../../assets/data/data";
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+// import bull from "../../../assets/img/Image.jpg";
 import {
   ItemsDiv,
   ImageDiv,
-  TextHead,
-  TextSubHead,
-  CartPrice,
-  Sized,
-  Color,
-  Click,
-  SubDiv1,
-  SubDiv2,
-  SubDiv3,
-  SubDiv4,
-  SubDiv5,
-  HoverClick,
   ButtonPlus,
   Number,
   ButtonMinus,
   SubRightDiv,
-  IncrementButton,
-  DecrementButton,
   GeneralDiv,
   Img,
   CardImage,
   SubDivi,
+  DetailsText,
+  DetailsHead,
+  DetailHead,
+  DetailsSubhead,
+  DetailSubhead,
+  DetailsSpec,
+  SizeTextDiv,
+  DetailText,
+  Sizes,
+  SizeBtns,
+  SizeBtn,
+  ColorTextDiv,
+  ColorButton,
+  ColorsBtn,
+  ColorBtn,
+  Price,
+  Horizon,
+  HorizonRule,
+  ImgDiv,
+  ArrowDiv,
+  Arrow,
+  ActionButton,
 } from "./cart-items.styles";
 
 const CartItems = () => {
   return (
-    <GeneralDiv>
-      <ItemsDiv>
-        <SubDiv1>
-          <TextHead>Apollo</TextHead>
-          <TextSubHead>Running short</TextSubHead>
-        </SubDiv1>
-        <SubDiv2>
-          <CartPrice>$50.00</CartPrice>
-        </SubDiv2>
-        <SubDiv3>
-          <Sized>SIZE:</Sized>
-          <SubDivi>
-            <HoverClick>XS</HoverClick>
-            <HoverClick>S</HoverClick>
-            <HoverClick>M</HoverClick>
-            <HoverClick>l</HoverClick>
-          </SubDivi>
-        </SubDiv3>
-        <SubDiv5>
-          <Color>COLOUR:</Color>
-          <SubDivi>
-            <Click id="color1"></Click>
-            <Click id="color2"></Click>
-            <Click id="color3"></Click>
-          </SubDivi>
-        </SubDiv5>
-      </ItemsDiv>
-      <ImageDiv>
-        {/* <Click></Click> */}
-        <SubRightDiv>
-          <ButtonPlus>
-            <IncrementButton>+</IncrementButton>
-          </ButtonPlus>
-          <Number>
-            <span>1</span>
-          </Number>
-          <ButtonMinus>
-            <DecrementButton>-</DecrementButton>
-          </ButtonMinus>
-        </SubRightDiv>
-        <>
-          <CardImage>
-            <Img url={bull} altName="product Image" />
-          </CardImage>
-        </>
-      </ImageDiv>
-    </GeneralDiv>
+    <div>
+      <Horizon>
+        <HorizonRule />
+      </Horizon>
+      {cartItems.map((item, i) => {
+        const {
+          id,
+          image,
+          brand,
+          name,
+          price,
+          size1,
+          size2,
+          size3,
+          size4,
+          color1,
+          color2,
+          color3,
+          qty,
+        } = item;
+        return (
+          <div>
+            <GeneralDiv key={`${i}${id}`} className="item">
+              <ItemsDiv>
+                <DetailsText>
+                  <DetailsHead>
+                    <DetailHead>{brand}</DetailHead>
+                  </DetailsHead>
+                  <DetailsSubhead>
+                    <DetailSubhead>{name}</DetailSubhead>
+                  </DetailsSubhead>
+                </DetailsText>
+                <DetailsSpec>
+                  <Price>
+                    <span>
+                      $<span>{price}</span>
+                    </span>
+                  </Price>
+                </DetailsSpec>
+                <DetailsSpec>
+                  <SizeTextDiv>
+                    <DetailText>SIZE:</DetailText>
+                  </SizeTextDiv>
+                  <Sizes>
+                    <SizeBtns>
+                      <SizeBtn>{size1}</SizeBtn>
+                    </SizeBtns>
+                    <SizeBtns>
+                      <SizeBtn>{size2}</SizeBtn>
+                    </SizeBtns>
+                    <SizeBtns>
+                      <SizeBtn>{size3}</SizeBtn>
+                    </SizeBtns>
+                    <SizeBtns>
+                      <SizeBtn>{size4}</SizeBtn>
+                    </SizeBtns>
+                  </Sizes>
+                </DetailsSpec>
+                <DetailsSpec>
+                  <ColorTextDiv>
+                    <DetailText>COLOR:</DetailText>
+                  </ColorTextDiv>
+                  <ColorButton>
+                    <ColorsBtn>
+                      <ColorBtn
+                        id="color-1"
+                        backgroundColor={color1}
+                      ></ColorBtn>
+                    </ColorsBtn>
+                    <ColorsBtn>
+                      <ColorBtn
+                        id="color-2"
+                        backgroundColor={color2}
+                      ></ColorBtn>
+                    </ColorsBtn>
+                    <ColorsBtn>
+                      <ColorBtn
+                        id="color-3"
+                        backgroundColor={color3}
+                      ></ColorBtn>
+                    </ColorsBtn>
+                  </ColorButton>
+                </DetailsSpec>
+              </ItemsDiv>
+              <ImageDiv>
+                {/* <Click></Click> */}
+                <SubRightDiv>
+                  <ButtonPlus>
+                    <ActionButton>+</ActionButton>
+                  </ButtonPlus>
+                  <Number>
+                    <span>{qty}</span>
+                  </Number>
+                  <ButtonMinus>
+                    <ActionButton>-</ActionButton>
+                  </ButtonMinus>
+                </SubRightDiv>
+                <ImgDiv>
+                  <CardImage>
+                    <Img url={image} altName="item Image" />
+                  </CardImage>
+                  <ArrowDiv>
+                    <Arrow id="arrow--left">
+                      <IoIosArrowBack />
+                    </Arrow>
+                    <Arrow id="arrow--right">
+                      <IoIosArrowForward />
+                    </Arrow>
+                  </ArrowDiv>
+                </ImgDiv>
+              </ImageDiv>
+            </GeneralDiv>
+            <Horizon>
+              <HorizonRule />
+            </Horizon>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 
