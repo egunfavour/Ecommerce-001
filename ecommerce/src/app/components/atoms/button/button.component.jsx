@@ -1,4 +1,4 @@
-import Spinner from "../spinner/spinner.coponent.jsx";
+import Spinner from "../spinner/spinner.component.jsx";
 import { BaseButton, CurvedButton } from "./button.styles.jsx";
 
 export const BUTTON_TYPE_CLASSES = {
